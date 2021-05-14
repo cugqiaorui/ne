@@ -320,7 +320,6 @@ if __name__ == "__main__":
         novelties = np.array(novelties)
         scores = np.array(scores)
         f = scores + novelties
-        f *= -1
         idx_sorted = np.argsort(f)
         nov_params = es_params[idx_sorted[:args.pop_size]]
 

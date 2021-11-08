@@ -249,7 +249,7 @@ if __name__ == "__main__":
     parser.add_argument('--save_all_models',
                         dest="save_all_models", action="store_true")
     parser.add_argument('--debug', dest='debug', action='store_true')
-    parser.add_argument('--seed', default=-1, type=int)
+    parser.add_argument('--seed', default=10, type=int)
     parser.add_argument('--render', dest='render', action='store_true')
 
     args = parser.parse_args()
